@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="500.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.controller.LoginController">
+   <top>
+      <AnchorPane prefHeight="170.0" prefWidth="0.0" BorderPane.alignment="CENTER">
+         <children>
+            <Label layoutX="162.0" layoutY="57.0" text="Recommend Easy">
+               <font>
+                  <Font name="Calibri Bold" size="24.0" />
+               </font>
+               <textFill>
+                  <LinearGradient endX="1.0" endY="1.0">
+                     <stops>
+                        <Stop color="#0043a1cc" />
+                        <Stop color="#fa0000cc" offset="1.0" />
+                     </stops>
+                  </LinearGradient>
+               </textFill>
+            </Label>
+            <Label layoutX="103.0" layoutY="95.0" prefHeight="40.0" prefWidth="295.0" text="A useful tool to auto generate letter of recommendations for your students" textAlignment="CENTER" wrapText="true">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+   </top>
+   <center>
+      <AnchorPane prefHeight="370.0" prefWidth="500.0" style="-fx-background-color: f1d9d9;" BorderPane.alignment="CENTER">
+         <children>
+            <Label layoutX="192.0" layoutY="42.0" text="Get started for free">
+               <font>
+                  <Font name="Calibri Bold" size="15.0" />
+               </font>
+            </Label>
+            <PasswordField fx:id="passwordField" layoutX="149.0" layoutY="103.0" prefHeight="25.0" prefWidth="203.0" promptText="Enter your password" />
+            <Label layoutX="150.0" layoutY="83.0" text="Password">
+               <font>
+                  <Font name="Calibri" size="13.0" />
+               </font>
+            </Label>
+            <Button fx:id="loginBtn" layoutX="150.0" layoutY="148.0" mnemonicParsing="false" onAction="#loginBtnClicked" prefHeight="25.0" prefWidth="204.0" style="-fx-background-color: #4285f4;" text="Login" textFill="WHITE">
+               <font>
+                  <Font name="Calibri Bold" size="14.0" />
+               </font>
+            </Button>
+            <Label fx:id="failMessage" layoutX="149.0" layoutY="191.0" prefHeight="17.0" prefWidth="207.0" textFill="#c60505" />
+         </children>
+      </AnchorPane>
+   </center>
+   <bottom>
+      <AnchorPane prefHeight="99.0" prefWidth="500.0" BorderPane.alignment="CENTER" />
+   </bottom>
+</BorderPane>
